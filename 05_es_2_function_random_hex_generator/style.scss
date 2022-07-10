@@ -42,7 +42,7 @@ body {
 
         // con for
     // @for $i from 1 through 12 {
-    //     &:nth-child(12n + #{$i}){
+    //     &:nth-child(#{$i}){
     //         background-color: random-hex();
     //     }
     // }
@@ -50,7 +50,7 @@ body {
     // con while
       $i:0;
       @while $i<12 {
-        &:nth-child(12n + #{$i+1}) {
+        &:nth-child(#{$i+1}) {
           background-color: random-hex();
         }
         $i: $i+1;
